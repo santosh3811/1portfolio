@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Santosh Karini, Computer Science Engineering student">
+    <meta name="keywords" content="portfolio, web developer, computer engineering, Santosh Karini">
+    <title>Santosh Karini | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://res.cloudinary.com/duceao3wn/image/upload/v1751215226/WhatsApp_Image_2025-06-29_at_22.09.40_v0yj0q.jpg" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <div class="nav-content">
+            <nav>
+                <img src="https://res.cloudinary.com/duceao3wn/image/upload/v1751211626/logo_hisfby.jpg" alt="Portfolio Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" aria-label="Close menu"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" aria-label="Open menu"></i>
+            </nav>
+            <div class="header-text">
+                <p class="role">Computer Science Engineering Student</p>
+                <h1>Hi, I'm <span>Santosh Karini</span><br>from Andhra Pradesh</h1>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_santosh_2405" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/karini-santosh-332728270/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/santosh3811" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="https://res.cloudinary.com/duceao3wn/image/upload/v1751215226/WhatsApp_Image_2025-06-29_at_22.09.40_v0yj0q.jpg" alt="Santosh Karini profile picture">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About Me</h2>
+                        <p>I'm a Computer Engineering student at Vellore Institute of Technology with a passion for software development and open-source contributions. My goal is to leverage my technical skills to create impactful solutions while continuously learning and growing in the field of technology.</p>
+                        
+                        <div class="tab-titles">
+                            <!-- <button data-tab="skills" class="tab-links arrow-wrapper">Skills<div class="arrow"></div></class=></button>
+                            <button data-tab="Certifications" class="tab-links arrow-wrapper">Certifications<div class="arrow"></div></div></button>
+                            <button data-tab="education" class="tab-links arrow-wrapper">Education<div class="arrow"></div></div></button> -->
+
+
+
+                            <button class="tab-links arrow-wrapper" data-tab="skills">Skills<div class="arrow"></div></button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="tab-links arrow-wrapper" data-tab="Certifications">Certifications<div class="arrow"></div></button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="tab-links arrow-wrapper" data-tab="education">Education<div class="arrow"></div></button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><strong>Programming:</strong> Java, Python, JavaScript</li>
+                                <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript</li>
+                                <li><strong>Database:</strong> SQL, MongoDB</li>
+                                <li><strong>Tools:</strong> Git, VS Code, IntelliJ</li>
+                                <li><strong>Soft Skills:</strong> Problem Solving, Team Collaboration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="Certifications">
+                            <ul>
+                                <li>
+                                    <span>2022</span>
+                                    <strong>Microsoft - Etrain India</strong>
+                                    <p>Online certification program covering fundamental programming concepts</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>2025 - Present</span>
+                                    <strong>B.Tech in Computer Engineering</strong>
+                                    <p>Vellore Institute of Technology, Vellore</p>
+                                </li>
+                                <li>
+                                    <span>2022</span>
+                                    <strong>Higher Secondary Education</strong>
+                                    <p>Sasi Educational Institute, West Godavari, Andhra Pradesh</p>
+                                </li>
+                                <li>
+                                    <span>2020</span>
+                                    <strong>Secondary Education</strong>
+                                    <p>Sasi English Medium School, West Godavari, Andhra Pradesh</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2 class="sub-title">My Services</h2>
+                <div class="services-list">
+                    <article>
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Custom website development tailored to your needs, including responsive design and modern frameworks.</p>
+                        <a href="https://santosh3811.github.io/portfolio/" class="learn-more">View Portfolio</a>
+                    </article>
+                    <article>
+                        <i class="fas fa-crop-alt"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design approach creating intuitive and engaging digital experiences.</p>
+                        <a href="#" class="learn-more">Coming Soon</a>
+                    </article>
+                    <article>
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>App Design</h3>
+                        <p>Mobile application design with focus on usability and platform-specific guidelines.</p>
+                        <a href="#" class="learn-more">Coming Soon</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="Projects">
+            <div class="container">
+                <h2 class="sub-title">My Projects</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="https://res.cloudinary.com/duceao3wn/image/upload/v1751261965/WhatsApp_Image_2025-06-30_at_11.07.05_iiezso.jpg" alt="Online fraud detection using machine-learning">
+                        <div class="layer">
+                            <h3>Online fraud detection using machine-learning</h3>
+                            <p>project-link</p>
+                            <a href="https://github.com/santosh3811/online-payments-fraud-detection-using-machine-learning" target="_blank" aria-label="View project details"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="https://res.cloudinary.com/duceao3wn/image/upload/v1751262873/Screenshot_2025-06-30_at_11.24.01_AM_erh42c.png" alt="Portfolio Website">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>Responsive personal portfolio website showcasing my skills and projects.</p>
+                            <p>website-link</p>
+                            <a href="https://santosh3811.github.io/portfolio/#header" target="_blank" aria-label="View portfolio"><i class="fas fa-external-link-alt"></i></a>
+                            <p>project-link</p>
+                            <a href="https://github.com/santosh3811/portfolio" target="_blank" aria-label="View portfolio"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/images/project3.png" alt="Coming Soon Project">
+                        <div class="layer">
+                            <h3>Project in Development</h3>
+                            <p>Exciting new project currently under development.</p>
+                            <a href="#" aria-label="Coming soon"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p><i class="fas fa-paper-plane"></i> karini.siddu2022@vitstudent.ac.in</p>
+                        <p><i class="fas fa-phone"></i> +91 8760349999</p>
+                        
+                        <div class="social-icons">
+                            <a href="https://facebook.com/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/_santosh_2405" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/karini-santosh-332728270/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        
+                        <a href="https://drive.google.com/file/d/1lVM1kyPaMyHdwXzpx4iwAu7oNJrVTxnm/view" download class="btn btn-secondary">Download Resume</a>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form id="contactForm" action="/submit-form" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div id="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyright">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Santosh Karini. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
