@@ -3,11 +3,13 @@ const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const path = require('path');
+const cron = require('node-cron');
+const axios = require('axios');
 
 const app = express();
 const PORT = process.env.PORT || 5050;
 
-// Middlewares
+// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -48,9 +50,20 @@ app.post('/submit-form', async (req, res) => {
     }
 });
 
-// Fallback for frontend (SPA routing)
+// Fallback route for SPA (Single Page App)
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Cron job to self-ping every 5 minutes to keep the app active
+cron.schedule('*/5 * * * *', async () => {
+    const pingUrl = process.env.SELF_URL || `http://localhost:${PORT}`;
+    try {
+        const response = await axios.get(pingUrl);
+        console.log(`Self-ping success at ${new Date().toISOString()}:`, response.status);
+    } catch (error) {
+        console.error(`Self-ping failed at ${new Date().toISOString()}:`, error.message);
+    }
 });
 
 // Start server
